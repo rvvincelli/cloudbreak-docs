@@ -11,7 +11,7 @@ dependencies:
 
 test:
   override:
-    - make test
+    - bash -c "export DONT_RM_CONTAINERS=true; make test"
 
 deployment:
   master:
